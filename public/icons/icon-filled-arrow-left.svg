@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="m18.428 10.728.814.842a.93.93 0 0 1 0 1.287l-7.12 7.376a.855.855 0 0 1-1.241 0l-7.123-7.376a.93.93 0 0 1 0-1.287l.814-.842a.86.86 0 0 1 1.256.015l4.206 4.572V4.411c0-.505.392-.911.88-.911h1.172c.488 0 .88.406.88.91v10.905l4.206-4.572a.853.853 0 0 1 1.256-.015z" id="lqdxeya5wa"/>
+    </defs>
+    <g transform="matrix(-1 0 0 1 24 0)" fill="none" fill-rule="evenodd">
+        <path d="M0 0h24v24H0z"/>
+        <use fill="#FFF" fill-rule="nonzero" transform="rotate(90 11.5 12)" xlink:href="#lqdxeya5wa"/>
+    </g>
+</svg>

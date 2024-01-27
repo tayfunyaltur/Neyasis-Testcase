@@ -23,3 +23,7 @@
     height: fit-content;
     margin-top: 1.125rem;
 }
+
+.content {
+    padding: 42px 150px;
+}
