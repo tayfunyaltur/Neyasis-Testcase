@@ -50,3 +50,20 @@ export const openPositions = [
         },
     },
 ];
+
+export const partners = [
+    "acibadem.png",
+    "akbank.webp",
+    "akcansa.png",
+    "akkim.png",
+    "akkok.png",
+    "aktifbank.jpg",
+    "allianz.webp",
+    "anadolu-sigorta.png",
+    "anel-grup.png",
+    "arc-elik.png",
+    "bosch.png",
+    "bezmia-lem-vak-f-u-niversitesi-logosu.png",
+    "ronesans-holding.png",
+    "TAV.png",
+];

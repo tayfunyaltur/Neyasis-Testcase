@@ -1,4 +1,5 @@
 import Carousel from "./components/Carousel";
+import OurPartners from "./components/OurPartners";
 import SearchSlider from "./components/SearchSlider";
 import Search from "./components/Searh";
 import TitledImage from "./components/TitledImage";
@@ -37,6 +38,7 @@ export default function Home() {
                         titles={["İş Veren Çözümleri"]}
                     />
                 </div>
+                <OurPartners />
             </div>
             <div id="footer"></div>
         </main>
