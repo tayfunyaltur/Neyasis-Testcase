@@ -1,0 +1,22 @@
+.container {
+    width: 34.625rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    display: flex;
+    background: var(--white);
+    overflow: hidden;
+    align-items: center;
+    padding-left: 1.25rem;
+    gap: 1.25rem;
+}
+
+.container input {
+    width: 100%;
+    border: none;
+    outline: none !important;
+}
+
+.container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}

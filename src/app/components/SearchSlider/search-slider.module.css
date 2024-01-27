@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    padding: 23px 150px;
+    display: flex;
+    background: rgba(107, 121, 152, 0.05);
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .title {
+    font-size: 20px;
+    color: var(--dark-gray);
+    white-space: nowrap;
+}
