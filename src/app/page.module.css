@@ -27,3 +27,10 @@
 .content {
     padding: 42px 150px;
 }
+
+.titledImages {
+    margin-top: 40px;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
