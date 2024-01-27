@@ -67,3 +67,30 @@ export const partners = [
     "ronesans-holding.png",
     "TAV.png",
 ];
+
+export const suggestions = [
+    {
+        title: "Popüler Kategoriler",
+        items: "Yazılım Geliştirme-Mobil Uygulama Geliştirme-Kullanıcı Deneyimi -Kullanılabilirlik-Proje Yönetimi-İş Analizi-Raporlama Uzmanı-Test Uzmanı-Yazılım Mimarı-Arayüz Tasarımı".split(
+            "-"
+        ),
+    },
+    {
+        title: "Popüler Başlıklar",
+        items: "Senior .net Developer-Kullanıcı Deneyimi Tasarımcısı-Senior Mobile Developer-Kullanılabilirlik Uzmanı-IT Sorumlusu-Mid Level .net Developer".split(
+            "-"
+        ),
+    },
+    {
+        title: "Popüler Lokasyonlar",
+        items: "İstanbul-Ankara-İzmir-Bursa-Kocaeli-Antalya-Adana-Mersin-Kayseri".split(
+            "-"
+        ),
+    },
+    {
+        title: "Popüler Şirket İlanları",
+        items: "Koç Sistem-Aktif Bank-Akbank-Türk Hava Yolları-Brisa-Vakıfbank-Neyasis Tech.".split(
+            "-"
+        ),
+    },
+];

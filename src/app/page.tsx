@@ -2,6 +2,7 @@ import Carousel from "./components/Carousel";
 import OurPartners from "./components/OurPartners";
 import SearchSlider from "./components/SearchSlider";
 import Search from "./components/Searh";
+import Suggestions from "./components/Suggestions";
 import TitledImage from "./components/TitledImage";
 import { SliderItems, openPositions } from "./constants";
 import classnames from "./page.module.css";
@@ -39,6 +40,7 @@ export default function Home() {
                     />
                 </div>
                 <OurPartners />
+                <Suggestions />
             </div>
             <div id="footer"></div>
         </main>

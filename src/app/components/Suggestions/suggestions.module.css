@@ -1,0 +1,36 @@
+.container {
+    margin-top: 40px;
+    width: 100%;
+    color: var(--dark-gray);
+}
+
+.mainTitle {
+    font-size: 1.5rem;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.listContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.suggestionItem a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.suggestionItem a:hover {
+    text-decoration: underline;
+}
