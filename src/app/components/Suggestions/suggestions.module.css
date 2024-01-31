@@ -14,14 +14,33 @@
     margin-top: 20px;
 }
 
-.listContainer ul {
-    list-style: none;
-    padding: 0;
-}
-
 .title {
     margin-bottom: 5px;
     font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-top: 20px;
+        text-decoration: underline;
+    }
+
+    .listContainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .listContainer ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.listContainer ul {
+    list-style: none;
+    padding: 0;
 }
 
 .suggestionItem a {

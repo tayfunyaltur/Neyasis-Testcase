@@ -39,11 +39,16 @@ const Carousel = ({ title }: CarouselProps) => {
 
     const scroll = (direction: "left" | "right") => {
         const scrollContainer = document.getElementById("scrollContainer");
-        if (!scrollContainer) return;
+        const innerContainer = scrollContainer?.firstChild
+            ?.firstChild as HTMLElement;
+        if (!scrollContainer || !innerContainer) return;
         if (direction === "left" && step === 0) return;
         if (direction === "right" && step === data.length - 1) return;
         scrollContainer.scrollTo({
-            left: direction === "right" ? (step + 1) * 192 : (step - 1) * 192,
+            left:
+                direction === "right"
+                    ? (step + 1) * innerContainer.offsetWidth
+                    : (step - 1) * innerContainer.offsetWidth,
             behavior: "smooth",
         });
         setStep((prev) => (direction === "left" ? prev - 1 : prev + 1));

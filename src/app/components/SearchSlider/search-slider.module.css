@@ -7,6 +7,26 @@
     gap: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 42px 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 42px 75px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 42px 25px;
+    }
+}
+
 .container .title {
     font-size: 20px;
     color: var(--dark-gray);

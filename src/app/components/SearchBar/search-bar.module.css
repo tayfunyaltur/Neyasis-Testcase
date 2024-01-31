@@ -16,6 +16,24 @@
     outline: none !important;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 24.625rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .container {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80vw;
+    }
+}
+
 .container img {
     width: 1.5rem;
     height: 1.5rem;
