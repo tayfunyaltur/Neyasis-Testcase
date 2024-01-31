@@ -4,10 +4,10 @@ import SearchSlider from "./components/SearchSlider";
 import Search from "./components/Searh";
 import Suggestions from "./components/Suggestions";
 import TitledImage from "./components/TitledImage";
-import { SliderItems, openPositions } from "./constants";
+import { openPositions } from "./constants";
 import classnames from "./page.module.css";
 
-export default function Home() {
+function Home() {
     return (
         <main className={classnames.main}>
             <div className={classnames.header}>
@@ -23,11 +23,10 @@ export default function Home() {
                 />
                 <Search />
             </div>
-            <SearchSlider slideItems={SliderItems} />
+            <SearchSlider />
             <div className={classnames.content}>
                 <Carousel
                     title="Öne çıkan iş ilanları"
-                    items={[...openPositions, ...openPositions]}
                 />
                 <div className={classnames.titledImages}>
                     <TitledImage
@@ -46,3 +45,5 @@ export default function Home() {
         </main>
     );
 }
+
+export default Home;

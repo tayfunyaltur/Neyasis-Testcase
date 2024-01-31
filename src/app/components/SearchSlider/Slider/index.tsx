@@ -9,8 +9,8 @@ const Slider = ({ items }: { items: string[] }) => {
     return (
         <div className={classnames.container}>
             <div className={classnames.slideContainer}>
-                {items.map((item) => (
-                    <SliderItem name={item} />
+                {items.map((item, index) => (
+                    <SliderItem key={`popular-searches-${index}`} name={item} />
                 ))}
                 <div></div>
             </div>

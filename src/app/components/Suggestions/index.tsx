@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import classnames from "./suggestions.module.css";
 import { suggestions } from "@/app/constants";
+import { useDispatch, useSelector } from "react-redux";
 
 const SuggestionList = ({
     title,
@@ -24,11 +26,18 @@ const SuggestionList = ({
 };
 
 const Suggestions = () => {
+    const data = useSelector((state: any) => state.resources.suggestions || []);
+    const dispatch = useDispatch();
+
+    React.useEffect(() => {
+        dispatch({ type: "FETCH_SUGGESTIONS" });
+    }, [dispatch]);
+
     return (
         <div className={classnames.container}>
             <div className={classnames.mainTitle}>Sizin için iş ilanları</div>
             <div className={classnames.listContainer}>
-                {suggestions.map((suggestion, index) => (
+                {data.map((suggestion: any, index: number) => (
                     <SuggestionList
                         key={index}
                         title={suggestion.title}

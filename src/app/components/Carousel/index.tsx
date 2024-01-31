@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import classnames from "./carousel.module.css";
+import { useDispatch, useSelector } from "react-redux";
 
 interface CarouselItems {
     position: string;
@@ -22,17 +23,25 @@ const CarouselItem = ({ position, company }: CarouselItems) => {
 
 interface CarouselProps {
     title: string;
-    items: CarouselItems[];
 }
 
-const Carousel = ({ title, items }: CarouselProps) => {
+const Carousel = ({ title }: CarouselProps) => {
     const [step, setStep] = useState(0);
+    const data = useSelector(
+        (state: any) => state.resources.openPositions || []
+    );
+
+    const dispatch = useDispatch();
+
+    useLayoutEffect(() => {
+        dispatch({ type: "FETCH_OPEN_POSITIONS" });
+    }, [dispatch]);
 
     const scroll = (direction: "left" | "right") => {
         const scrollContainer = document.getElementById("scrollContainer");
         if (!scrollContainer) return;
         if (direction === "left" && step === 0) return;
-        if (direction === "right" && step === items.length - 1) return;
+        if (direction === "right" && step === data.length - 1) return;
         scrollContainer.scrollTo({
             left: direction === "right" ? (step + 1) * 192 : (step - 1) * 192,
             behavior: "smooth",
@@ -52,7 +61,7 @@ const Carousel = ({ title, items }: CarouselProps) => {
                     id="scrollContainer"
                 >
                     <div className={classnames.innerContainer}>
-                        {items.map((item, index) => (
+                        {data.map((item: any, index: number) => (
                             <CarouselItem
                                 key={index}
                                 company={item.company}
@@ -63,7 +72,7 @@ const Carousel = ({ title, items }: CarouselProps) => {
                 </div>
                 <button
                     onClick={() => scroll("right")}
-                    disabled={step >= items.length - 6}
+                    disabled={step >= data.length - 6}
                 >
                     <img src="/icons/icon-filled-arrow-left.svg" alt="right" />
                 </button>

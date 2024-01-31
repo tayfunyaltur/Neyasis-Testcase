@@ -71,26 +71,54 @@ export const partners = [
 export const suggestions = [
     {
         title: "Popüler Kategoriler",
-        items: "Yazılım Geliştirme-Mobil Uygulama Geliştirme-Kullanıcı Deneyimi -Kullanılabilirlik-Proje Yönetimi-İş Analizi-Raporlama Uzmanı-Test Uzmanı-Yazılım Mimarı-Arayüz Tasarımı".split(
-            "-"
-        ),
+        items: [
+            "Yazılım Geliştirme",
+            "Mobil Uygulama Geliştirme",
+            "Kullanıcı Deneyimi",
+            "Kullanılabilirlik",
+            "Proje Yönetimi",
+            "İş Analizi",
+            "Raporlama Uzmanı",
+            "Test Uzmanı",
+            "Yazılım Mimarı",
+            "Arayüz Tasarımı",
+        ],
     },
     {
         title: "Popüler Başlıklar",
-        items: "Senior .net Developer-Kullanıcı Deneyimi Tasarımcısı-Senior Mobile Developer-Kullanılabilirlik Uzmanı-IT Sorumlusu-Mid Level .net Developer".split(
-            "-"
-        ),
+        items: [
+            "Senior .net Developer",
+            "Kullanıcı Deneyimi Tasarımcısı",
+            "Senior Mobile Developer",
+            "Kullanılabilirlik Uzmanı",
+            "IT Sorumlusu",
+            "Mid Level .net Developer",
+        ],
     },
     {
         title: "Popüler Lokasyonlar",
-        items: "İstanbul-Ankara-İzmir-Bursa-Kocaeli-Antalya-Adana-Mersin-Kayseri".split(
-            "-"
-        ),
+        items: [
+            "İstanbul",
+            "Ankara",
+            "İzmir",
+            "Bursa",
+            "Kocaeli",
+            "Antalya",
+            "Adana",
+            "Mersin",
+            "Kayseri",
+        ],
     },
     {
         title: "Popüler Şirket İlanları",
-        items: "Koç Sistem-Aktif Bank-Akbank-Türk Hava Yolları-Brisa-Vakıfbank-Neyasis Tech.".split(
-            "-"
-        ),
+        items: [
+            "Koç Sistem",
+            "Aktif Bank",
+            "Akbank",
+            "Türk Hava Yolları",
+            "Brisa",
+            "Vakıfbank",
+            "Neyasis Tech.",
+        ],
     },
 ];
