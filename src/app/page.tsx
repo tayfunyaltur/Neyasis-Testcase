@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import OurPartners from "./components/OurPartners";
@@ -11,6 +12,14 @@ import classnames from "./page.module.css";
 function Home() {
     return (
         <main className={classnames.main}>
+            <div className={classnames.topButtons}>
+                <Button type="outline" buttonSize="md">
+                    Kayit Ol
+                </Button>
+                <Button type="outline" buttonSize="md">
+                    Giris Yap
+                </Button>
+            </div>
             <div className={classnames.header}>
                 <img
                     src="/assets/logo.png"

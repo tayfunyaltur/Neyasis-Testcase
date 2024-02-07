@@ -30,15 +30,34 @@
     padding: 42px 150px;
 }
 
+.topButtons {
+    position: absolute;
+    text-align: end;
+    gap: 20px;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-right: 150px;
+}
+
 @media screen and (max-width: 1024px) {
     .content {
         padding: 42px 120px;
+    }
+    .topButtons {
+        padding-right: 70px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .content {
         padding: 42px 75px;
+    }
+
+    .topButtons {
+        padding-right: 30px;
     }
 }
 
