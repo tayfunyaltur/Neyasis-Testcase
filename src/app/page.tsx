@@ -1,4 +1,5 @@
 import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
 import OurPartners from "./components/OurPartners";
 import SearchSlider from "./components/SearchSlider";
 import Search from "./components/Searh";
@@ -25,9 +26,7 @@ function Home() {
             </div>
             <SearchSlider />
             <div className={classnames.content}>
-                <Carousel
-                    title="Öne çıkan iş ilanları"
-                />
+                <Carousel title="Öne çıkan iş ilanları" />
                 <div className={classnames.titledImages}>
                     <TitledImage
                         image="/assets/employee.png"
@@ -41,7 +40,7 @@ function Home() {
                 <OurPartners />
                 <Suggestions />
             </div>
-            <div id="footer"></div>
+            <Footer />
         </main>
     );
 }
