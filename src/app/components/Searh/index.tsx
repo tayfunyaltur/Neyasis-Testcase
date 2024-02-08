@@ -3,15 +3,23 @@ import classnames from "./search.module.css";
 import SearchBar from "../SearchBar";
 import Button from "../Button";
 
-const Search = () => {
+interface SearchProps {
+    isBlue?: boolean;
+}
+
+const Search = ({ isBlue }: SearchProps) => {
     return (
-        <div className={classnames.searchContainer}>
-            <SearchBar />
+        <div
+            className={`${classnames.searchContainer} ${
+                isBlue && classnames.blueContainer
+            }`}
+        >
+            <SearchBar isBlue={isBlue} />
             <div className={classnames.buttonContainer}>
-                <Button type="primary" buttonSize="lg">
+                <Button type="blue-outline" buttonSize="lg">
                     <img src="/assets/find.png" alt="find" />
                 </Button>
-                <a href="#">Detaylı Arama</a>
+                {!isBlue && <a href="#">Detaylı Arama</a>}
             </div>
         </div>
     );

@@ -6,7 +6,6 @@ import SearchSlider from "./components/SearchSlider";
 import Search from "./components/Searh";
 import Suggestions from "./components/Suggestions";
 import TitledImage from "./components/TitledImage";
-import { openPositions } from "./constants";
 import classnames from "./page.module.css";
 
 function Home() {
@@ -49,7 +48,6 @@ function Home() {
                 <OurPartners />
                 <Suggestions />
             </div>
-            <Footer />
         </main>
     );
 }

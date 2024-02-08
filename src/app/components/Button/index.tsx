@@ -2,13 +2,14 @@ import React from "react";
 import classnames from "./button.module.css";
 
 type ButtonProps = {
-    type?: "primary" | "outline";
+    type?: "primary" | "outline" | "blue-outline";
     buttonSize?: "sm" | "md" | "lg";
 };
 
 const classes = {
     primary: classnames.primary,
     outline: classnames.outline,
+    "blue-outline": classnames.blueOutline,
     sm: classnames.sm,
     md: classnames.md,
     lg: classnames.lg,

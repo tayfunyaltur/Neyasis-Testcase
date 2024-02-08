@@ -19,12 +19,17 @@
     vertical-align: middle;
 }
 
+.blueOutline,
 .outline {
     background: none;
     outline: none;
     box-shadow: none;
     border: 1px solid var(--white);
     color: var(--white);
+}
+
+.blueOutline {
+    border: 1px solid var(--brand-blue);
 }
 
 .md {

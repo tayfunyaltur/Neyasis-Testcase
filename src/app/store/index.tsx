@@ -5,6 +5,7 @@ import { Provider as ReduxProvider } from "react-redux";
 import resourceActions from "./actions/resourceActions";
 
 import rootReducer from "./reducers";
+import userActions from "./actions/userActions";
 
 const fetcherMiddleware = (storeAPI: any) => (next: any) => (action: any) => {
     switch (action.type) {
@@ -40,6 +41,24 @@ const fetcherMiddleware = (storeAPI: any) => (next: any) => (action: any) => {
                 const _originalResult = next({
                     ...action,
                     payload: suggestions,
+                });
+                return _originalResult;
+            });
+            break;
+        case "FETCH_SUGGESTIONS":
+            resourceActions.getSuggestions().then((suggestions) => {
+                const _originalResult = next({
+                    ...action,
+                    payload: suggestions,
+                });
+                return _originalResult;
+            });
+            break;
+        case "FETCH_USER":
+            userActions.getUser().then((user) => {
+                const _originalResult = next({
+                    ...action,
+                    payload: user,
                 });
                 return _originalResult;
             });

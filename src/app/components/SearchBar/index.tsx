@@ -1,9 +1,13 @@
 import React from "react";
 import classnames from "./search-bar.module.css";
 
-const SearchBar = () => {
+interface SearchBarProps {
+    isBlue?: boolean;
+}
+
+const SearchBar = ({ isBlue }: SearchBarProps) => {
     return (
-        <div className={classnames.container}>
+        <div className={`${classnames.container} ${isBlue && classnames.blue}`}>
             <img src="/icons/icon-filled-search.svg" alt="search" />
             <input
                 type="text"

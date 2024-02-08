@@ -1,0 +1,89 @@
+.panelContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imageContainer {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--brand-blue);
+    position: relative;
+}
+
+.imageContainer div {
+    position: absolute;
+    width: 64px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/top-image.webp");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imageContainer div img:first-of-type {
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+.userDetails div {
+    font-size: 18px;
+    color: var(--teal);
+}
+
+.userDetails div:first-of-type {
+    font-size: 24px;
+    color: var(--brand-blue);
+    margin-top: 20px;
+}
+
+.userDetails div:nth-of-type(2n) {
+    margin-top: 13px;
+}
+
+.userDetails a:first-of-type {
+    color: #000;
+    margin-top: 16px;
+    font-size: 12px;
+    display: block;
+}
+
+.userDetails a:last-of-type {
+    color: var(--brand-blue);
+    font-size: 14px;
+    display: block;
+    margin-top: 16px;
+}
+
+.websiteSection {
+    display: flex;
+    gap: 10px;
+}
+
+.websiteSection img {
+    width: 20px;
+    height: 20px;
+}
+
+.customAnchor {
+    display: block;
+    color: var(--brand-blue);
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.docContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.docContainer div {
+    flex: 1;
+    color: var(--teal);
+}
