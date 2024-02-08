@@ -32,8 +32,8 @@ const LeftPanel = () => {
                     <div>{details?.name}</div>
                     <div>{details?.title}</div>
                     <div>
-                        <span>{details?.location.country}</span>
-                        <span>{details?.location.city}</span>
+                        <span>{details?.location.country}</span>,{" "}
+                        <span>{details?.location.city}</span>,{" "}
                         <span>{details?.location.neighborhood}</span>
                     </div>
                     <div>{details?.email}</div>
