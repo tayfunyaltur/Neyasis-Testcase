@@ -87,7 +87,7 @@ const Resume = () => {
             <ResumeSection title="Yetenekler">
                 <div className={classnames.gridList}>
                     {talents?.map((talend, index) => (
-                        <div className={classnames.listItem}>
+                        <div key={talend.name} className={classnames.listItem}>
                             <img src="/assets/noun-list.webp" alt="check" />
                             <div>{talend.name}</div>
                             <div>({talend.year} years)</div>
@@ -98,7 +98,7 @@ const Resume = () => {
             <ResumeSection title="İlgi Alanları">
                 <div className={classnames.gridList}>
                     {interests?.map((interest, index) => (
-                        <div className={classnames.listItem}>
+                        <div key={interest} className={classnames.listItem}>
                             <img src="/assets/noun-list.webp" alt="check" />
                             <div>{interest}</div>
                         </div>

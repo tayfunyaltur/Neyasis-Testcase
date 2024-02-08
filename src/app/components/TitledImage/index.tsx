@@ -12,14 +12,14 @@ const TitledImage = ({ image, titles }: TitledImageProps) => {
             <img src={image} />
             <div className={classnames.titleContainer}>
                 {titles.map((title, index) => (
-                    <>
+                    <React.Fragment key={`titles-${index}`}>
                         <a href="#" key={index} className={classnames.title}>
                             {title}
                         </a>
                         {titles.length > 1 && index < titles.length - 1 && (
                             <div className={classnames.divider} />
                         )}
-                    </>
+                    </React.Fragment>
                 ))}
             </div>
         </div>

@@ -64,7 +64,7 @@ const LeftPanel = () => {
             <PanelSection title="Dokumanlar">
                 <>
                     {docs?.map((doc: any) => (
-                        <div className={classnames.docContainer}>
+                        <div key={doc} className={classnames.docContainer}>
                             {doc.split(".")[1] === "pdf" ? (
                                 <img
                                     width="24px"
@@ -87,7 +87,7 @@ const LeftPanel = () => {
             </PanelSection>
             <PanelSection title="Kaydedilen Aaramalarim">
                 {savedSearches?.map((doc: any) => (
-                    <div className={classnames.docContainer}>
+                    <div key={doc} className={classnames.docContainer}>
                         <img width="24px" src="./assets/icon-search.webp" />
                         <div>{doc}</div>
                         <img width="16px" src="./assets/icon-cross.png" />
@@ -97,7 +97,7 @@ const LeftPanel = () => {
             <PanelSection title="Basvurularim">
                 <>
                     {applies?.map((doc: any) => (
-                        <div className={classnames.docContainer}>
+                        <div key={doc} className={classnames.docContainer}>
                             <img width="24px" src="./assets/icon-search.webp" />
                             <div>{doc}</div>
                             <img width="16px" src="./assets/icon-cross.png" />
