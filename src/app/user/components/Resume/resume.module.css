@@ -76,6 +76,12 @@
     margin-top: 20px;
 }
 
+@media screen and (max-width: 800px) {
+    .gridList {
+        grid-template-columns: 1fr;
+    }
+}
+
 .about {
     margin: 14px 0px;
     font-size: 16px;

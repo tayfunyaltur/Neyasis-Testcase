@@ -87,3 +87,24 @@
     flex: 1;
     color: var(--teal);
 }
+
+@media screen and (max-width: 1200px) {
+    .panelContainer > div:first-of-type {
+        display: flex;
+        justify-content: left;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .panelContainer > div:first-of-type {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .panelContainer > div:first-of-type > div:last-of-type {
+        width: 260px;
+    }
+}
