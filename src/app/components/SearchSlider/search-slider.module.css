@@ -5,6 +5,7 @@
     background: rgba(107, 121, 152, 0.05);
     align-items: center;
     gap: 2rem;
+    font-family: "MarkPro", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {

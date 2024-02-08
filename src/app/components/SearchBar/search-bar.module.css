@@ -14,6 +14,7 @@
     width: 100%;
     border: none;
     outline: none !important;
+    font-family: "MarkPro", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -39,6 +40,6 @@
     height: 1.5rem;
 }
 
-.blue{
+.blue {
     border: 1px solid var(--brand-blue);
 }

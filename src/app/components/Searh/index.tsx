@@ -16,7 +16,10 @@ const Search = ({ isBlue }: SearchProps) => {
         >
             <SearchBar isBlue={isBlue} />
             <div className={classnames.buttonContainer}>
-                <Button type="blue-outline" buttonSize="lg">
+                <Button
+                    type={isBlue ? "blue-outline" : "primary"}
+                    buttonSize="lg"
+                >
                     <img src="/assets/find.png" alt="find" />
                 </Button>
                 {!isBlue && <a href="#">Detaylı Arama</a>}

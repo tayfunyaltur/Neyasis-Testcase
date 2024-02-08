@@ -12,6 +12,13 @@
 }
 
 @font-face {
+    font-family: "Markpro";
+    src: url("/fonts/nunito/MarkPro-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Nunito";
     src: url("/fonts/nunito/Nunito-Regular.ttf") format("truetype");
     font-weight: normal;

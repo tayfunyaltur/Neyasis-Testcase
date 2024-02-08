@@ -19,9 +19,11 @@ const Button = ({
     children,
     type = "primary",
     buttonSize = "md",
+    ...props
 }: React.HTMLProps<HTMLButtonElement> & ButtonProps) => {
     return (
         <button
+            {...props}
             className={`${classnames.button} ${classes[type]} ${classes[buttonSize]}`}
         >
             {children}
