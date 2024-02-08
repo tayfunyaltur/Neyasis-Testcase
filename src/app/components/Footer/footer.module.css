@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    background-color: var(--dark-gray);
+    padding: 42px 150px;
+    display: flex;
+    color: var(--white);
+    font-size: 14px;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 42px 120px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 42px 75px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 42px 25px;
+    }
+}
+
+.column {
+    flex: 1;
+}
+
+.container .column {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .container .column {
+        flex-direction: column;
+    }
+
+    .container .column:first-of-type div {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.container .column:first-of-type {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container .column:first-of-type > div:last-of-type {
+    display: flex;
+}
+
+.container .column:first-of-type > div:last-of-type img {
+    mix-blend-mode: multiply;
+    width: 80px;
+    height: 80px;
+}
+
+.container .column:first-of-type > div:last-of-type span {
+    margin-left: 16px;
+    font-size: 8px;
+    line-height: 1.75;
+}
+
+.container .column:first-of-type > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .column:first-of-type > div:first-of-type span,
+.container .column:last-of-type span:first-of-type {
+    width: fit-content;
+    white-space: nowrap;
+    margin-left: 16px;
+}
+.container .column:first-of-type > div:first-of-type span:last-of-type a,
+.container .column:last-of-type span:first-of-type a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.container .column:first-of-type > div:first-of-type span:last-of-type a:hover,
+.container .column:last-of-type span:first-of-type a:hover {
+    text-decoration: underline;
+}
+
+.container .column:first-of-type > div:first-of-type span:last-of-type a::after,
+.container .column:last-of-type span:first-of-type a::after {
+    content: "|";
+    margin: 0px 5px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.container
+    .column:first-of-type
+    > div:first-of-type
+    span:last-of-type
+    a:last-of-type::after,
+.container .column:last-of-type span:first-of-type a:last-of-type:after {
+    content: "";
+    margin: 0px;
+}

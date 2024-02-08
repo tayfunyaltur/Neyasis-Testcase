@@ -1,0 +1,101 @@
+:root {
+    --dark-gray: #666768;
+    --teal: #6b7998;
+    --light-gray: #e9e9e9;
+    --white-smoke: #f7f6f6;
+    --darker-gray: #626160;
+    --white: #ffffff;
+    --semi-gray: rgba(107, 121, 152, 0.2);
+    --border-gray: rgba(191, 191, 191, 0.7);
+    --brand-blue: #4361ee;
+    --dark-teal: #5b6987;
+}
+
+@font-face {
+    font-family: "Markpro";
+    src: url("/fonts/markpro/MarkPro-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-BlackItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-ExtraBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/nunito/Nunito-SemiBold.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "nunito", sans-serif;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}

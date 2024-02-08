@@ -1,0 +1,38 @@
+.lg {
+    padding: 1rem 3.125rem;
+    padding-bottom: 15px;
+    border-radius: 1.75rem;
+}
+
+.primary {
+    border: none;
+    background: var(--white);
+}
+
+.button {
+    outline: none !important;
+    cursor: pointer;
+}
+
+.button img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blueOutline,
+.outline {
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.blueOutline {
+    border: 1px solid var(--brand-blue);
+}
+
+.md {
+    padding: 8px 15px;
+    border-radius: 18px;
+}

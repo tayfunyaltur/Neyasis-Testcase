@@ -1,0 +1,45 @@
+.container {
+    width: 34.625rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    display: flex;
+    background: var(--white);
+    overflow: hidden;
+    align-items: center;
+    padding-left: 1.25rem;
+    gap: 1.25rem;
+}
+
+.container input {
+    width: 100%;
+    border: none;
+    outline: none !important;
+    font-family: "MarkPro", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 24.625rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .container {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+.container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.blue {
+    border: 1px solid var(--brand-blue);
+}
